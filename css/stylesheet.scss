@@ -35,7 +35,101 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+$lysebla: #0092d4;
+$orange: #f56a30;
+$morkebla: #2a5faf;
+$lysegra: #e4e2e2;
+$morkegra: #3d3c3d;
 
+#grid-container {
+  display: grid;
+  grid-template-columns: 8.4% 8.4% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%8.3% 8.3% 8.4% 8.4%;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  position: relative;
+}
+#billed_maske {
+  height: 0;
+  width: 0;
+  z-index: 100;
+  border-bottom: 100px solid white;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+#hvem_er_vi {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+#foto_strimmel {
+  position: relative;
+  width: 100vw;
+}
+#foto_maske_top {
+  height: 0;
+  width: 0;
+  border-top: 100px solid white;
+  border-right: 100vw solid transparent;
+  position: absolute;
+}
+#foto_maske_bund {
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid white;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+#mod_os {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column-start: 1;
+  grid-column-end: 13;
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+#gra_and_hvid {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+}
+#gra_maske {
+  position: absolute;
+  border-top: 100px solid white;
+  border-right: 100vw solid transparent;
+  bottom: 0;
+  background-color: $morkegra;
+}
+#partnere {
+  background-color: $morkegra;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  height: 100px;
+}
+footer {
+  position: relative;
+  height: 100px;
+}
+#footer_mask {
+  position: absolute;
+  border-bottom: 100px solid white;
+  border-left: 100vw solid transparent;
+  bottom: 0;
+  background-color: $morkegra;
+}
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
