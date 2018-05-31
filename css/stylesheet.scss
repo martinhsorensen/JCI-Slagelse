@@ -45,7 +45,19 @@ $morkegra: #3d3c3d;
   display: grid;
   grid-template-columns: 8.4% 8.4% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%8.3% 8.3% 8.4% 8.4%;
 }
-
+nav {
+  position: absolute;
+  width: 100vw;
+}
+.fa-bars {
+  color: white;
+}
+#mobil_menu {
+  position: absolute;
+  font-size: 36px;
+  right: 4.2%;
+  z-index: 100;
+}
 header {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -55,22 +67,30 @@ header {
   height: 0;
   width: 0;
   z-index: 100;
-  border-bottom: 100px solid white;
+  border-bottom: 115px solid $lysegra;
   border-left: 100vw solid transparent;
   position: absolute;
   bottom: 0;
 }
 #hvem_er_vi {
-  padding-top: 20px;
-  padding-bottom: 20px;
   grid-column-start: 1;
   grid-column-end: 13;
+  background-color: $lysegra;
+
+  h1 {
+    padding-top: 20px;
+    padding-left: 16.8%;
+    width: 83.2%;
+  }
 
   p {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 16.8%;
+    width: 83.2%;
   }
 }
+
 #foto_strimmel {
   position: relative;
   width: 100vw;
@@ -78,14 +98,14 @@ header {
 #foto_maske_top {
   height: 0;
   width: 0;
-  border-top: 100px solid white;
+  border-top: 100px solid $lysegra;
   border-right: 100vw solid transparent;
   position: absolute;
 }
 #foto_maske_bund {
   height: 0;
   width: 0;
-  border-bottom: 100px solid white;
+  border-bottom: 100px solid $lysegra;
   border-left: 100vw solid transparent;
   position: absolute;
   bottom: 0;
@@ -93,42 +113,78 @@ header {
 #mod_os {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: $lysegra;
   grid-column-start: 1;
   grid-column-end: 13;
+
+  h1 {
+    width: 83.4%;
+    padding-left: 16.8%;
+  }
 
   p {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 16.8%;
   }
 }
 #gra_and_hvid {
   position: relative;
   width: 100vw;
   height: 100px;
+  background-color: $lysegra;
 }
-#gra_maske {
+#lysegra_maske {
   position: absolute;
-  border-top: 100px solid white;
-  border-right: 100vw solid transparent;
-  bottom: 0;
-  background-color: $morkegra;
+  border-bottom: 100px solid $morkegra;
+  border-left: 100vw solid transparent;
+  top: 0;
+  z-index: 100;
+  background-color: $lysegra;
 }
 #partnere {
   background-color: $morkegra;
   grid-column-start: 1;
   grid-column-end: 13;
-  height: 100px;
+
+  p {
+    color: white;
+    width: 83.2%;
+    padding-left: 16.8%;
+    padding-top: 20px;
+  }
+
+}
+#partner_logo {
+  width: 100vw;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#spar_nord {
+  width: 28%;
+  margin-left: 16.8%;
+}
+#upperhill {
+  width: 35%;
+  margin-left: 4.2%;
+}
+#ditslagelse {
+  width: 35%;
+  margin-top: 4%;
+  margin-left: 33.4%;
 }
 footer {
   position: relative;
   height: 100px;
+  width: 100vw;
 }
 #footer_mask {
   position: absolute;
-  border-bottom: 100px solid white;
-  border-left: 100vw solid transparent;
-  bottom: 0;
-  background-color: $morkegra;
+  border-top: 100px solid $morkegra;
+  border-right: 100vw solid transparent;
+  top: 0;
+  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil

@@ -30,6 +30,8 @@
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,15 +40,27 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 <div id="grid-container">
-    <nav id="menu"></nav>
+    <nav>
+        <div id="mobil_menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
     <header>
         <div id="billed_maske"></div>
         <img  src="images/Social_1.jpg">
     </header>
-   <!-- -->
     <section id="hvem_er_vi">
+        <h1>
+            Junior Chamber International  Slagelse
+        </h1>
+
         <p>
-            blah blah blah blah
+            Styrk din karriere og skab et solidt netværk. <br><br>
+            Ved medlemskab i JCI Slagelse får du hands-on værktøjer som du kan bruge direkte til at styrke din karriere.
+            Gennem projekt- og organisatorisk arbejde lokalt, nationalt og internationalt, udvikler du dig personligt og styrker dine faglige kompetencer indenfor projektstyring og ledelse.
+            <br><br>
+            JCI Slagelse tilbyder medlemmer udviklingsmuligheder der sætter en i stand til at være en del af en positiv udvikling.
+
         </p>
     </section>
 
@@ -57,21 +71,38 @@
     </section>
 
     <section id="mod_os">
+        <h1>Den bedste måde at lære os at kende er ved at møde os</h1>
+        <br><br>
         <p>
-
+            Blah, blah, blah...
         </p>
     </section>
 
     <section id="gra_and_hvid">
-        <div id="gra_maske"></div>
+        <div id="lysegra_maske"></div>
     </section>
 
     <section id="partnere">
-
+        <p>
+            Partnere <br><br>
+            Lokale virksomheder er en uvurdelig støtte for vores daglige virke.
+        </p>
+        <div id="partner_logo">
+            <img id="spar_nord" src="images/Spar-Nord_Logo_BW.png">
+            <img id="upperhill" src="images/logo_theupperhill-bw.png">
+            <img id="ditslagelse" src="images/dit_slagelse_logo_BW.png">
+        </div>
+        <p>
+            Din virksomheds sponsorat kan være med til at pårvirke
+            den positive udvikling af slagelse ved at støtte uddannelse
+            , personlig og bæredygtig udvikling gennem JCI Slagelses
+            ambitiøse medlemmer, der alle er en del af dit lokale erhvervsliv
+        </p>
     </section>
 
     <footer>
         <div id="footer_mask"></div>
+        <img src="images/Networking_1.jpg">
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; }
+
+li {
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 8.4% 8.4% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.4% 8.4%; }
+
+nav {
+  position: absolute;
+  width: 100vw; }
+
+.fa-bars {
+  color: white; }
+
+#mobil_menu {
+  position: absolute;
+  font-size: 36px;
+  right: 4.2%;
+  z-index: 100; }
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  position: relative; }
+
+#billed_maske {
+  height: 0;
+  width: 0;
+  z-index: 100;
+  border-bottom: 115px solid #e4e2e2;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: 0; }
+
+#hvem_er_vi {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  background-color: #e4e2e2; }
+  #hvem_er_vi h1 {
+    padding-top: 20px;
+    padding-left: 16.8%;
+    width: 83.2%; }
+  #hvem_er_vi p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16.8%;
+    width: 83.2%; }
+
+#foto_strimmel {
+  position: relative;
+  width: 100vw; }
+
+#foto_maske_top {
+  height: 0;
+  width: 0;
+  border-top: 100px solid #e4e2e2;
+  border-right: 100vw solid transparent;
+  position: absolute; }
+
+#foto_maske_bund {
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid #e4e2e2;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: 0; }
+
+#mod_os {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e4e2e2;
+  grid-column-start: 1;
+  grid-column-end: 13; }
+  #mod_os h1 {
+    width: 83.4%;
+    padding-left: 16.8%; }
+  #mod_os p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16.8%; }
+
+#gra_and_hvid {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+  background-color: #e4e2e2; }
+
+#lysegra_maske {
+  position: absolute;
+  border-bottom: 100px solid #3d3c3d;
+  border-left: 100vw solid transparent;
+  top: 0;
+  z-index: 100;
+  background-color: #e4e2e2; }
+
+#partnere {
+  background-color: #3d3c3d;
+  grid-column-start: 1;
+  grid-column-end: 13; }
+  #partnere p {
+    color: white;
+    width: 83.2%;
+    padding-left: 16.8%;
+    padding-top: 20px; }
+
+#partner_logo {
+  width: 100vw;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap; }
+
+#spar_nord {
+  width: 28%;
+  margin-left: 16.8%; }
+
+#upperhill {
+  width: 35%;
+  margin-left: 4.2%; }
+
+#ditslagelse {
+  width: 35%;
+  margin-top: 4%;
+  margin-left: 33.4%; }
+
+footer {
+  position: relative;
+  height: 100px;
+  width: 100vw; }
+
+#footer_mask {
+  position: absolute;
+  border-top: 100px solid #3d3c3d;
+  border-right: 100vw solid transparent;
+  top: 0;
+  z-index: 100; }
+
+/*# sourceMappingURL=stylesheet.css.map */
