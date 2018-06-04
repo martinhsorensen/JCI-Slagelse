@@ -41,12 +41,38 @@
 <body>
 <div id="grid-container">
     <nav>
+        <div id="logo"><img id="logo_img" src="images/Danmark_web.png"></div>
         <div id="mobil_menu">
             <i class="fas fa-bars"></i>
+
+        </div>
+        <div id="dropdown_mobil">
+            <ul>
+                <li><a href="">Hvem er vi?</a> </li>
+                <li><a href="">Hvad laver vi?</a> </li>
+                <li><a href="">Medlemsskab</a></li>
+            </ul>
+        </div>
+        <div id="web_menu">
+            <ul>
+                <li>Hvem er vi</li>
+            </ul>
+            <ul>
+                <li>Hvad laver vi</li>
+            </ul>
+            <ul>
+                <li>Medlemsskab</li>
+            </ul>
         </div>
     </nav>
     <header>
         <div id="billed_maske"></div>
+        <div id="tagline">
+            <P>
+                <span id="navn">JUNIOR CHAMBER INTERNATIONAL</span> <br>
+                En investering i din fremtid
+            </P>
+        </div>
         <img  src="images/Social_1.jpg">
     </header>
     <section id="hvem_er_vi">
@@ -60,7 +86,6 @@
             Gennem projekt- og organisatorisk arbejde lokalt, nationalt og internationalt, udvikler du dig personligt og styrker dine faglige kompetencer indenfor projektstyring og ledelse.
             <br><br>
             JCI Slagelse tilbyder medlemmer udviklingsmuligheder der sætter en i stand til at være en del af en positiv udvikling.
-
         </p>
     </section>
 
@@ -72,14 +97,17 @@
 
     <section id="mod_os">
         <h1>Den bedste måde at lære os at kende er ved at møde os</h1>
-        <br><br>
+        <br>
         <p>
             Blah, blah, blah...
         </p>
+
+        <div class="knap" id="mod_os_knap"><a href="">Se vores kalender</a></div>
+
     </section>
 
     <section id="gra_and_hvid">
-        <div id="lysegra_maske"></div>
+        <div id="hvid_maske"></div>
     </section>
 
     <section id="partnere">
@@ -98,13 +126,40 @@
             , personlig og bæredygtig udvikling gennem JCI Slagelses
             ambitiøse medlemmer, der alle er en del af dit lokale erhvervsliv
         </p>
+
+        <div class="knap" id="partner_knap"><a href="">JCI partnerskab</a></div>
     </section>
 
     <footer>
         <div id="footer_mask"></div>
+
+        <div id="kontakt_info">
+            <p>
+                Kontakt os <br>
+                blah blah blah
+            </p>
+        </div>
+
+        <div id="calltoaction">
+            <a href="">
+                <p>
+                    Meld dig<br>
+                    ind idag
+                </p>
+            </a>
+        </div>
+
+
         <img src="images/Networking_1.jpg">
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(e){
+        $("#mobil_menu").click(function(e){
+            $("#dropdown_mobil").slideToggle(250);
+        });
+    });
+</script>
 </body>
 </html>

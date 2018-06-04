@@ -21,6 +21,10 @@ p {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 img {
   display: block;
   max-width: 100%;
@@ -29,6 +33,14 @@ img {
 #grid-container {
   display: grid;
   grid-template-columns: 8.4% 8.4% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.4% 8.4%; }
+
+#logo {
+  position: absolute;
+  z-index: 100;
+  left: 4.2%; }
+
+#logo_img {
+  height: 50px; }
 
 nav {
   position: absolute;
@@ -43,6 +55,21 @@ nav {
   right: 4.2%;
   z-index: 100; }
 
+#dropdown_mobil {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  right: 4.2%;
+  top: 43px; }
+  #dropdown_mobil ul {
+    list-style: none; }
+    #dropdown_mobil ul li {
+      padding: 5px 0;
+      font-size: 18px; }
+
+#web_menu {
+  display: none; }
+
 header {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -52,15 +79,25 @@ header {
   height: 0;
   width: 0;
   z-index: 100;
-  border-bottom: 115px solid #e4e2e2;
+  border-bottom: 115px solid white;
   border-left: 100vw solid transparent;
   position: absolute;
   bottom: 0; }
 
+#tagline {
+  position: absolute;
+  bottom: 125px;
+  width: 100vw;
+  text-align: center;
+  color: #f56a30; }
+
+#navn {
+  color: #0092d4; }
+
 #hvem_er_vi {
   grid-column-start: 1;
   grid-column-end: 13;
-  background-color: #e4e2e2; }
+  background-color: white; }
   #hvem_er_vi h1 {
     padding-top: 20px;
     padding-left: 16.8%;
@@ -78,14 +115,14 @@ header {
 #foto_maske_top {
   height: 0;
   width: 0;
-  border-top: 100px solid #e4e2e2;
+  border-top: 100px solid white;
   border-right: 100vw solid transparent;
   position: absolute; }
 
 #foto_maske_bund {
   height: 0;
   width: 0;
-  border-bottom: 100px solid #e4e2e2;
+  border-bottom: 100px solid white;
   border-left: 100vw solid transparent;
   position: absolute;
   bottom: 0; }
@@ -93,7 +130,7 @@ header {
 #mod_os {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #e4e2e2;
+  background-color: white;
   grid-column-start: 1;
   grid-column-end: 13; }
   #mod_os h1 {
@@ -104,19 +141,31 @@ header {
     padding-bottom: 20px;
     padding-left: 16.8%; }
 
+.knap {
+  margin-left: 16.8%;
+  border: 3px solid #f56a30;
+  border-radius: 10px;
+  padding: 10px; }
+
+#mod_os_knap {
+  width: 139px; }
+
+#partner_knap {
+  width: 126px; }
+
 #gra_and_hvid {
   position: relative;
   width: 100vw;
   height: 100px;
-  background-color: #e4e2e2; }
+  background-color: white; }
 
-#lysegra_maske {
+#hvid_maske {
   position: absolute;
   border-bottom: 100px solid #3d3c3d;
   border-left: 100vw solid transparent;
   top: 0;
   z-index: 100;
-  background-color: #e4e2e2; }
+  background-color: white; }
 
 #partnere {
   background-color: #3d3c3d;
@@ -126,7 +175,9 @@ header {
     color: white;
     width: 83.2%;
     padding-left: 16.8%;
-    padding-top: 20px; }
+    padding-bottom: 30px; }
+  #partnere a {
+    color: white; }
 
 #partner_logo {
   width: 100vw;
@@ -158,5 +209,52 @@ footer {
   border-right: 100vw solid transparent;
   top: 0;
   z-index: 100; }
+
+#kontakt_info {
+  position: absolute;
+  top: 120px;
+  left: 8.4%;
+  color: white; }
+  #kontakt_info p {
+    margin: 10px; }
+
+#calltoaction {
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  right: 8.4%;
+  padding-top: 44px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 24px; }
+  #calltoaction a {
+    color: #f56a30; }
+
+@media screen and (min-width: 768px) {
+  #mobil_menu {
+    display: none; }
+
+  #logo_img {
+    height: auto; }
+
+  #web_menu {
+    display: inline-flex;
+    position: absolute;
+    height: 83px;
+    z-index: 100;
+    left: 20%;
+    color: white;
+    font-size: 24px; }
+    #web_menu ul {
+      list-style: none;
+      height: 83px;
+      position: relative; }
+    #web_menu li {
+      margin-left: 21.1%;
+      margin-right: 21.1%;
+      margin-top: 35%; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
