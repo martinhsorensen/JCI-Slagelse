@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Forside</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -30,6 +30,8 @@
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,8 +39,130 @@
 
 <!-- i <body> har man alt indhold på siden -->
 <body>
+<div id="grid-container">
+    <nav>
+        <div id="logo"><a href="index.html"><img id="logo_img" src="images/Danmark_web.png"></a></div>
+        <div id="mobil_menu">
+            <i class="fas fa-bars"></i>
+
+        </div>
+        <div id="dropdown_mobil">
+            <ul>
+                <li><a href="">Hvem er vi?</a> </li>
+                <li><a href="">Hvad laver vi?</a> </li>
+                <li><a href="">Medlemsskab</a></li>
+            </ul>
+        </div>
+        <div id="web_menu">
+            <ul>
+                <li>Hvem er vi</li>
+            </ul>
+            <ul>
+                <li>Hvad laver vi</li>
+            </ul>
+            <ul>
+                <li>Medlemsskab</li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div id="billed_maske"></div>
+        <div id="tagline">
+            <P>
+                <span id="navn">JUNIOR CHAMBER INTERNATIONAL</span> <br>
+                En investering i din fremtid
+            </P>
+        </div>
+        <img  src="images/index_top_billede.png">
+    </header>
+    <section id="hvem_er_vi">
+        <h1>
+            Junior Chamber International  Slagelse
+        </h1>
+
+        <p>
+            Styrk din karriere og skab et solidt netværk. <br><br>
+            Ved medlemskab i JCI Slagelse får du hands-on værktøjer som du kan bruge direkte til at styrke din karriere.
+            Gennem projekt- og organisatorisk arbejde lokalt, nationalt og internationalt, udvikler du dig personligt og styrker dine faglige kompetencer indenfor projektstyring og ledelse.
+            <br><br>
+            JCI Slagelse tilbyder medlemmer udviklingsmuligheder der sætter en i stand til at være en del af en positiv udvikling.
+        </p>
+        <br>
+        <div class="knap" id="bliv_medlem">Bliv medlem</div>
+
+    </section>
+
+    <section id="foto_strimmel">
+        <div id="foto_maske_top"></div>
+        <div id="foto_maske_bund"></div>
+        <img src="images/Social_1.jpg">
+    </section>
+
+    <section id="mod_os">
+        <h1>Den bedste måde at lære os at kende er ved at møde os</h1>
+        <br>
+        <p>
+            Blah, blah, blah...
+        </p>
+
+        <div class="knap" id="mod_os_knap"><a href="">Se vores kalender</a></div>
+
+    </section>
+
+    <section id="gra_and_hvid">
+        <div id="hvid_maske"></div>
+    </section>
+
+    <section id="partnere">
+        <p>
+            Partnere <br><br>
+            Lokale virksomheder er en uvurdelig støtte for vores daglige virke.
+        </p>
+        <div id="partner_logo">
+            <img id="spar_nord" src="images/Spar-Nord_Logo_BW.png">
+            <img id="upperhill" src="images/logo_theupperhill-bw.png">
+            <img id="ditslagelse" src="images/dit_slagelse_logo_BW.png">
+        </div>
+        <p>
+            Din virksomheds sponsorat kan være med til at pårvirke
+            den positive udvikling af slagelse ved at støtte uddannelse,
+            personlig og bæredygtig udvikling gennem JCI Slagelses
+            ambitiøse medlemmer, der alle er en del af dit lokale erhvervsliv
+        </p>
+
+        <div class="knap" id="partner_knap"><a href="">JCI partnerskab</a></div>
+    </section>
+
+    <footer>
+        <div id="footer_mask"></div>
+
+        <div id="kontakt_info">
+            <p>
+                Kontakt os <br>
+                blah blah blah
+            </p>
+        </div>
+
+        <div id="calltoaction">
+            <a href="">
+                <p>
+                    Meld dig<br>
+                    ind idag
+                </p>
+            </a>
+        </div>
 
 
+        <img src="images/footer_billede.png">
+    </footer>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(e){
+        $("#mobil_menu").click(function(e){
+            $("#dropdown_mobil").slideToggle(250);
+        });
+    });
+</script>
 </body>
 </html>

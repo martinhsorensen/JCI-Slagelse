@@ -21,9 +21,316 @@ p {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 8.4% 8.4% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.4% 8.4%; }
+
+#logo {
+  position: absolute;
+  z-index: 100;
+  left: 4.2%; }
+
+#logo_img {
+  height: 50px; }
+
+nav {
+  position: absolute;
+  width: 100vw; }
+
+.fa-bars {
+  color: white; }
+
+#mobil_menu {
+  position: absolute;
+  font-size: 36px;
+  right: 4.2%;
+  z-index: 100; }
+
+#dropdown_mobil {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  right: 4.2%;
+  top: 43px; }
+  #dropdown_mobil ul {
+    list-style: none; }
+    #dropdown_mobil ul li {
+      padding: 5px 0;
+      font-size: 18px; }
+
+#web_menu {
+  display: none; }
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  position: relative; }
+
+#billed_maske {
+  height: 0;
+  width: 0;
+  z-index: 100;
+  border-bottom: 115px solid white;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: 0; }
+
+#tagline {
+  position: absolute;
+  bottom: 125px;
+  width: 100vw;
+  text-align: center;
+  color: #f56a30; }
+
+#navn {
+  color: #0092d4; }
+
+#hvem_er_vi {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  background-color: white; }
+  #hvem_er_vi h1 {
+    padding-top: 20px;
+    padding-left: 16.8%;
+    width: 83.2%; }
+  #hvem_er_vi p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16.8%;
+    width: 83.2%; }
+
+#foto_strimmel {
+  position: relative;
+  width: 100vw; }
+
+#foto_maske_top {
+  height: 0;
+  width: 0;
+  border-top: 100px solid white;
+  border-right: 100vw solid transparent;
+  position: absolute; }
+
+#foto_maske_bund {
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid white;
+  border-left: 100vw solid transparent;
+  position: absolute;
+  bottom: 0; }
+
+#mod_os {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 13; }
+  #mod_os h1 {
+    width: 83.4%;
+    padding-left: 16.8%; }
+  #mod_os p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16.8%; }
+
+.knap {
+  margin-left: 16.8%;
+  border: 3px solid #f56a30;
+  border-radius: 10px;
+  padding: 10px; }
+
+#mod_os_knap {
+  width: 139px; }
+
+#partner_knap {
+  width: 126px; }
+
+#bliv_medlem {
+  display: none; }
+
+#gra_and_hvid {
+  position: relative;
+  width: 100vw;
+  height: 100px;
+  background-color: white; }
+
+#hvid_maske {
+  position: absolute;
+  border-bottom: 100px solid #3d3c3d;
+  border-left: 100vw solid transparent;
+  top: 0;
+  z-index: 100;
+  background-color: white; }
+
+#partnere {
+  background-color: #3d3c3d;
+  grid-column-start: 1;
+  grid-column-end: 13; }
+  #partnere p {
+    color: white;
+    width: 83.2%;
+    padding-left: 16.8%;
+    padding-bottom: 30px; }
+  #partnere a {
+    color: white; }
+
+#partner_logo {
+  width: 100vw;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap; }
+
+#spar_nord {
+  width: 28%;
+  margin-left: 16.8%; }
+
+#upperhill {
+  width: 35%;
+  margin-left: 4.2%; }
+
+#ditslagelse {
+  width: 35%;
+  margin-top: 4%;
+  margin-left: 33.4%; }
+
+footer {
+  position: relative;
+  height: 100px;
+  width: 100vw; }
+
+#footer_mask {
+  position: absolute;
+  border-top: 100px solid #3d3c3d;
+  border-right: 100vw solid transparent;
+  top: 0;
+  z-index: 100; }
+
+#kontakt_info {
+  position: absolute;
+  top: 120px;
+  left: 8.4%;
+  color: black; }
+  #kontakt_info p {
+    margin: 10px; }
+
+#calltoaction {
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  right: 8.4%;
+  padding-top: 44px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #f56a30;
+  background-color: white;
+  font-size: 24px; }
+  #calltoaction a {
+    color: #f56a30; }
+
+@media screen and (min-width: 768px) {
+  #mobil_menu {
+    display: none; }
+
+  #logo_img {
+    height: auto; }
+
+  #web_menu {
+    display: inline-flex;
+    position: absolute;
+    height: 83px;
+    z-index: 100;
+    left: 20%;
+    color: white;
+    font-size: 24px; }
+    #web_menu ul {
+      list-style: none;
+      height: 83px;
+      position: relative; }
+    #web_menu li {
+      margin-left: 21.1%;
+      margin-right: 21.1%;
+      margin-top: 60px; }
+
+  #tagline {
+    font-size: 48px;
+    bottom: 250px; }
+
+  #billed_maske {
+    border-bottom: 300px solid white; }
+
+  #bliv_medlem {
+    display: initial; }
+
+  #foto_strimmel {
+    margin-top: 50px; }
+
+  #foto_maske_top {
+    border-top: 300px solid white; }
+
+  #foto_maske_bund {
+    border-bottom: 300px solid white; }
+
+  #gra_and_hvid {
+    height: 300px; }
+
+  #hvem_er_vi h1 {
+    padding-left: 8.4%; }
+  #hvem_er_vi p {
+    padding-left: 8.4%; }
+
+  .knap {
+    margin-left: 8.4%; }
+
+  #mod_os h1 {
+    padding-left: 8.4%; }
+  #mod_os p {
+    padding-left: 8.4%; }
+
+  #partnere p {
+    padding-left: 8.4%; }
+
+  #hvid_maske {
+    border-bottom: 300px solid #3d3c3d; }
+
+  #partner_logo {
+    display: flex; }
+
+  #spar_nord {
+    width: 17%;
+    margin-left: 8.4%; }
+
+  #upperhill {
+    width: 30%; }
+
+  #ditslagelse {
+    width: 17%;
+    margin-left: 4.2%; }
+
+  footer {
+    height: 500px;
+    overflow: hidden; }
+
+  #footer_mask {
+    border-top: 300px solid #3d3c3d; }
+
+  #kontakt_info {
+    top: 290px; }
+
+  #calltoaction {
+    width: 250px;
+    height: 250px;
+    top: 120px;
+    padding-top: 80px;
+    font-size: 38px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
