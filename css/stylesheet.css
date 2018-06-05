@@ -153,6 +153,9 @@ header {
 #partner_knap {
   width: 126px; }
 
+#bliv_medlem {
+  display: none; }
+
 #gra_and_hvid {
   position: relative;
   width: 100vw;
@@ -182,6 +185,7 @@ header {
 #partner_logo {
   width: 100vw;
   margin-top: 25px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap; }
 
@@ -214,7 +218,7 @@ footer {
   position: absolute;
   top: 120px;
   left: 8.4%;
-  color: white; }
+  color: black; }
   #kontakt_info p {
     margin: 10px; }
 
@@ -227,7 +231,7 @@ footer {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #f56a30;
   background-color: white;
   font-size: 24px; }
   #calltoaction a {
@@ -255,6 +259,78 @@ footer {
     #web_menu li {
       margin-left: 21.1%;
       margin-right: 21.1%;
-      margin-top: 35%; } }
+      margin-top: 60px; }
+
+  #tagline {
+    font-size: 48px;
+    bottom: 250px; }
+
+  #billed_maske {
+    border-bottom: 300px solid white; }
+
+  #bliv_medlem {
+    display: initial; }
+
+  #foto_strimmel {
+    margin-top: 50px; }
+
+  #foto_maske_top {
+    border-top: 300px solid white; }
+
+  #foto_maske_bund {
+    border-bottom: 300px solid white; }
+
+  #gra_and_hvid {
+    height: 300px; }
+
+  #hvem_er_vi h1 {
+    padding-left: 8.4%; }
+  #hvem_er_vi p {
+    padding-left: 8.4%; }
+
+  .knap {
+    margin-left: 8.4%; }
+
+  #mod_os h1 {
+    padding-left: 8.4%; }
+  #mod_os p {
+    padding-left: 8.4%; }
+
+  #partnere p {
+    padding-left: 8.4%; }
+
+  #hvid_maske {
+    border-bottom: 300px solid #3d3c3d; }
+
+  #partner_logo {
+    display: flex; }
+
+  #spar_nord {
+    width: 17%;
+    margin-left: 8.4%; }
+
+  #upperhill {
+    width: 30%; }
+
+  #ditslagelse {
+    width: 17%;
+    margin-left: 4.2%; }
+
+  footer {
+    height: 500px;
+    overflow: hidden; }
+
+  #footer_mask {
+    border-top: 300px solid #3d3c3d; }
+
+  #kontakt_info {
+    top: 290px; }
+
+  #calltoaction {
+    width: 250px;
+    height: 250px;
+    top: 120px;
+    padding-top: 80px;
+    font-size: 38px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
